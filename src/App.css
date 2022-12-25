@@ -1,0 +1,21 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+
+}
+
+.App {
+  /* background: #164e93; */
+  width: 100%;
+  /* height: 100vh; */
+
+}
+
+.main {
+  background-color: whitesmoke;
+}

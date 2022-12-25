@@ -1,0 +1,149 @@
+.about {
+    text-align: center;
+    margin-bottom: 1.5rem;
+}
+
+.section {
+    margin-top: 8.8rem;
+    margin-bottom: 7rem;
+}
+
+
+.section_title {
+    margin-top: 20px;
+    font-size: 1.5rem;
+    letter-spacing: 0.8px;
+}
+
+.about_img {
+    width: 240px;
+    height: 240px;
+    border-radius: 1.5rem;
+    justify-self: center;
+}
+
+.downlode {
+    display: inline-flex;
+    gap: 5px;
+    background-color: rgba(0, 0, 0, 0.737);
+    color: white;
+    padding: 5px 7px 5px 7px;
+    border-radius: 5px;
+}
+
+.downlode a {
+    color: white;
+}
+
+.fill {
+    margin-top: 3px;
+}
+
+
+.about_data {
+    width: 500px;
+    /* background-color: aquamarine; */
+}
+
+.about_info {
+    display: grid;
+    grid-template-columns: repeat(3, 140px);
+    gap: 0.5rem;
+    margin-bottom: 20px;
+}
+
+.about_icon {
+    font-size: 0.9rem;
+    color: rgba(0, 0, 0, 0.683);
+    margin-bottom: 5px;
+}
+
+.info_title {
+    font-size: 1rem;
+    font-weight: 550;
+}
+
+.info_subtitle {
+    font-size: 0.8rem;
+    font-weight: 500;
+}
+
+.about_box {
+    background-color: white;
+    border: 1px solid rgba(0, 0, 0, 0.45);
+    border-radius: 0.75rem;
+    text-align: center;
+    padding: 1rem 1.25rem;
+}
+
+.about_container {
+    display: grid;
+    grid-template-columns: 300px repeat(2, 1fr);
+    align-items: center;
+    column-gap: 5rem;
+}
+
+.about_discri {
+    padding: 0 4rem 0 0;
+    margin-bottom: 25px;
+}
+
+
+/* M */
+
+@media screen and (max-width: 850px) {
+    .about_container {
+        grid-template-columns: 1fr;
+        row-gap: 2rem;
+    }
+
+    .about_img {
+        width: 200px;
+        height: 200px;
+    }
+
+    .about_box {
+        padding: 0.75rem 0.5rem;
+    }
+
+    .about_data {
+        width: 100%;
+        text-align: center;
+    }
+
+    .about_info {
+        justify-content: center;
+    }
+
+    .about_discri {
+        padding: 0 4rem;
+        margin-bottom: 1.8rem;
+    }
+
+}
+
+@media screen and (max-width: 472px) {
+    .about_info {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .about_discri {
+        padding: 0;
+    }
+
+    .about_img {
+        width: 180px;
+        height: 180px;
+    }
+
+    .section {
+        margin-top: 3rem;
+        margin-bottom: 1rem;
+    }
+}
+
+@media screen and (max-width: 350px) {
+    .about_info {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}

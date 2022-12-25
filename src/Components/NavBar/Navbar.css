@@ -1,0 +1,176 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;600&display=swap');
+
+.container {
+    width: 100%;
+    margin-inline: auto;
+    background-color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 999;
+    transition: 0.7s ease-in-out;
+    /* border-bottom: 1px solid rgba(0, 0, 0, 0.144); */
+
+}
+
+.auto {
+    padding: 15px 120px 15px 120px;
+}
+
+.logo {
+    font-family: 'Dancing Script', cursive;
+    z-index: 99;
+}
+
+.nav-bar {
+    display: inline-flex;
+    gap: 50px;
+}
+
+.nav-bar li {
+    list-style: none;
+}
+
+.nav-bar a {
+    text-decoration: none;
+    color: black;
+    transition: all 0.5s ease-out;
+    position: relative;
+    font-size: 0.9rem;
+}
+
+.nav-bar a:hover:after,
+.nav-bar a .active1 {
+    content: "";
+    width: 100%;
+    height: 1.5px;
+    position: absolute;
+    bottom: -4px;
+    right: 0;
+    background-color: #161d96;
+    transition: all 1s ease-in;
+}
+
+.nav-bar li a:hover,
+.nav-bar li a .active1 {
+    color: #0d19f5e5;
+}
+
+.span {
+    color: rgb(9, 9, 212);
+}
+
+.toggle {
+    display: none;
+    cursor: pointer;
+}
+
+.nav-bar li i {
+    display: none;
+}
+
+.a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    row-gap: 5px;
+    width: 100%;
+    scroll-behavior: smooth;
+}
+
+.nav-icon {
+    font-size: x-large;
+}
+
+@media screen and (max-width:910px) {
+    .auto {
+        padding: 10px 50px 15px 50px;
+    }
+}
+
+@media screen and (max-width:855px) {
+
+    .container {
+        top: initial;
+        bottom: 0;
+        left: 0;
+        height: fit-content;
+        /* background-color: aliceblue; */
+        border-top: 1px solid rgba(0, 0, 0, 0.175);
+    }
+
+
+    .nav-bar {
+        position: fixed;
+        bottom: -300px;
+        width: 100%;
+        right: 0;
+        background-color: aliceblue;
+        padding-bottom: 100px;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        row-gap: 50px;
+        padding-top: 15px;
+        border-radius: 15px 15px 0px 0px;
+        box-shadow: 1px -3px 6px rgb(0, 0, 0, 0.7);
+        transition: 0.5s ease-in-out;
+    }
+
+    .a {
+        font-size: 0.9rem;
+    }
+
+    .nav-bar.active {
+        bottom: 0;
+    }
+
+    .nav-bar li i {
+        display: block;
+    }
+
+    .toggle {
+        z-index: 99;
+        font-size: 1.1rem;
+        display: block;
+    }
+
+    .h2 {
+        font-size: medium;
+        font-weight: 700;
+    }
+
+    .auto {
+        padding: 10px 30px 10px 30px;
+    }
+}
+
+@media screen and (max-width: 670px) {
+    .auto {
+        padding: 10px 20px 10px 20px;
+    }
+}
+
+@media screen and (max-width:450px) {
+    .container {
+        padding: 10px 20px 10px 15px;
+    }
+
+    .auto {
+        padding: 8px 20px 8px 20px;
+    }
+}
+
+@media screen and (max-width:270px) {
+    .nav-bar {
+        grid-template-columns: repeat(2, 1fr);
+        bottom: -350px;
+    }
+
+    .auto {
+        padding: 5px 20px 5px 20px;
+    }
+}
